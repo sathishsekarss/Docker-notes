@@ -2,6 +2,7 @@
 
 1. [What is docker?](#what-is-docker)
 2. [what is containers?](#what-is-containers)
+3. [Difference between Virtual machienes and Docker containers?](#virtual-machines-and-docker-containers)
 
 
 ## what is docker
@@ -23,3 +24,16 @@ A container is lightweight and isolated environment that has,
 3.  Runtime ( like Java, Node, Pythong )
 
 eg.  A container is like a sealed lunch box with everything your app needs.
+
+## virtual machines and docker containers
+
+| Feature        | Virtual Machine        | Docker Container  |
+| -------------- | ---------------------- | ----------------- |
+| OS             | Full Guest OS per VM   | No guest OS       |
+| Size           | Heavy (GBs)            | Lightweight (MBs) |
+| Startup time   | Minutes                | Seconds           |
+| Performance    | Slower (more overhead) | Near-native speed |
+| Isolation      | Strong (OS-level)      | Process-level     |
+| Resource usage | High                   | Low               |
+| Portability    | Less portable          | Highly portable   |
+| Scaling        | Slow                   | Very fast         |
