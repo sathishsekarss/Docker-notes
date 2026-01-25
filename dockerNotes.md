@@ -3,6 +3,7 @@
 1. [What is docker?](#what-is-docker)
 2. [what is containers?](#what-is-containers)
 3. [Difference between Virtual machienes and Docker containers?](#virtual-machines-and-docker-containers)
+3. [Installation of Docker](#installation-of-docker)
 
 
 ## what is docker
@@ -37,3 +38,8 @@ eg.  A container is like a sealed lunch box with everything your app needs.
 | Resource usage | High                   | Low               |
 | Portability    | Less portable          | Highly portable   |
 | Scaling        | Slow                   | Very fast         |
+
+
+## installation-of-docker
+
+For installation of docker refer to the official documentation from the docker site.
