@@ -39,6 +39,19 @@ eg.  A container is like a sealed lunch box with everything your app needs.
 | Portability    | Less portable          | Highly portable   |
 | Scaling        | Slow                   | Very fast         |
 
+Example:
+Spring Boot app
+
+VM approach:
+VM + Ubuntu
+Install Java
+Install app
+Takes time & memory
+
+Docker approach:
+Docker image with Java + app
+Run anywhere instantly
+Same behavior in Dev / QA / Prod
 
 ## installation-of-docker
 
