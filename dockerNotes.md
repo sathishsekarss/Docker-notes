@@ -4,6 +4,7 @@
 2. [what is containers?](#what-is-containers)
 3. [Difference between Virtual machienes and Docker containers?](#virtual-machines-and-docker-containers)
 3. [Installation of Docker](#installation-of-docker)
+4. [Images and Containers](#images-and-containers)
 
 
 ## what is docker
@@ -56,3 +57,8 @@ Same behavior in Dev / QA / Prod
 ## installation-of-docker
 
 For installation of docker refer to the official documentation from the docker site.
+
+## images and containers
+**Docker Image**: A Docker image is a read-only template that contains the application and its dependencies. It is used to create Docker containers. Think of it as a blueprint for your application. eg. A Docker image for a Node.js app would include the Node.js runtime and your application code.
+
+**Docker Container**: A Docker container is a running instance of a Docker image. It is an isolated environment where your application runs. Containers are lightweight and share the host OS kernel, making them faster to start and more efficient than virtual machines. eg. When you run a Docker image, it creates a container that executes your application in an isolated environment.  A container can be accessed via ports, and you can have multiple containers running the same image with different configurations in different terminals.
