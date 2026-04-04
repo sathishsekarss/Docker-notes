@@ -5,7 +5,8 @@
 3. [Difference between Virtual machienes and Docker containers?](#virtual-machines-and-docker-containers)
 3. [Installation of Docker](#installation-of-docker)
 4. [Images and Containers](#images-and-containers)
-4. [Basic docker file](#basic-docker-file)
+5. [Basic docker file](#basic-docker-file)
+5. [Docker hub](#docker-hub)
 
 
 ## what is docker
@@ -112,3 +113,6 @@ docker run -d \
   my-app
   ```
   ```
+
+## docker-hub
+A cloud-based registry for finding and sharing container images.
