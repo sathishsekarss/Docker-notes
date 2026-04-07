@@ -90,29 +90,18 @@ For installation of docker refer to the official documentation from the docker s
 
 # Start the application
   CMD ["npm", "start"]
-
-```
-```
-
 1. To run the above configurations first build the docker container,
 
 ```
-```
-```
-```
  docker build -t my-app .
- ```
  ```
 
 2. Then run the created docker container in using the below command and expose it via a port number
-```
 ```
 docker run -d \
   -p 3000:3000 \
   --name my-app-container \
   my-app
   ```
-  ```
-
 ## docker-hub
 A cloud-based registry for finding and sharing container images.
