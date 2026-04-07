@@ -67,29 +67,27 @@ For installation of docker refer to the official documentation from the docker s
 
 ## basic-docker-file
 
-```
-```
+**Use official Node.js image**
+FROM node:18-alpine
 
-# Use official Node.js image
-  FROM node:18-alpine
+**Set working directory**
+WORKDIR /app
 
-# Set working directory
-  WORKDIR /app
+**Copy package files**
+COPY package*.json ./
 
-# Copy package files
-  COPY package*.json ./
+**Install dependencies**
+RUN npm install
 
-# Install dependencies
-  RUN npm install
+**Copy app source**
+COPY . .
 
-# Copy app source
-  COPY . .
+**Expose app port**
+EXPOSE 3000
 
-# Expose app port
-  EXPOSE 3000
+**Start the application**
+CMD ["npm", "start"]
 
-# Start the application
-  CMD ["npm", "start"]
 1. To run the above configurations first build the docker container,
 
 ```
