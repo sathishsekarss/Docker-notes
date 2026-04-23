@@ -6,7 +6,7 @@
 3. [Installation of Docker](#installation-of-docker)
 4. [Images and Containers](#images-and-containers)
 5. [Basic docker file](#basic-docker-file)
-5. [Docker hub](#docker-hub)
+6. [Docker hub](#docker-hub)
 
 
 ## what is docker
@@ -59,6 +59,8 @@ Same behavior in Dev / QA / Prod
 ## installation-of-docker
 
 For installation of docker refer to the official documentation from the docker site.
+
+note:  If there is a elavated permission issue while installation.  Please install using Powershell by Clicking run as administrator.  Installation commands can be found in official docker site. 
 
 ## images and containers
 **Docker Image**: A Docker image is a read-only template that contains the application and its dependencies. It is used to create Docker containers. Think of it as a blueprint for your application. eg. A Docker image for a Node.js app would include the Node.js runtime and your application code.
