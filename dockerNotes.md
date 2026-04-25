@@ -7,6 +7,7 @@
 4. [Images and Containers](#images-and-containers)
 5. [Basic docker file](#basic-docker-file)
 6. [Docker hub](#docker-hub)
+7. [ Docker attach and detach mode](#docker-attach-and-detach-mode)
 
 
 ## what is docker
@@ -105,3 +106,9 @@ docker run -d \
   ```
 ## docker-hub
 A cloud-based registry for finding and sharing container images.
+
+## docker-attach-and-detach-mode
+    Docker attach connects your terminal to a running container’s STDIN/STDOUT. ( example using the docker Run CONTAINER_NAME command).
+
+    Docker detach mode Run of leave a container in the background without blocking your terminal. ( example using the docker start CONTAINER_NAME command).
+
