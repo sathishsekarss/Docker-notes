@@ -7,7 +7,8 @@
 4. [Images and Containers](#images-and-containers)
 5. [Basic docker file](#basic-docker-file)
 6. [Docker hub](#docker-hub)
-7. [ Docker attach and detach mode](#docker-attach-and-detach-mode)
+7. [Docker attach and detach mode](#docker-attach-and-detach-mode)
+8. [Interactive mode in docker](#interactive-mode-in-docker)
 
 
 ## what is docker
@@ -112,3 +113,13 @@ A cloud-based registry for finding and sharing container images.
 
     Docker detach mode Run of leave a container in the background without blocking your terminal. ( example using the docker start CONTAINER_NAME command).
 
+## interactive-mode-in-docker
+
+Docker interactive mode lets you run a container and directly interact with it via the terminal (stdin/stdout).
+
+run docker run --help to see the options about interative mode in docker
+
+example command:
+```
+docker run -it ubuntu
+```
