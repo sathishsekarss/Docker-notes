@@ -10,6 +10,7 @@
 7. [Docker attach and detach mode](#docker-attach-and-detach-mode)
 8. [Interactive mode in docker](#interactive-mode-in-docker)
 9. [Docker copy command](#docker-copy-command)
+10. [Docker tags](#docker-tags)
 
 
 ## what is docker
@@ -136,3 +137,14 @@ Example syntax
 docker cp file.txt my_container:/app/file.txt
 ```
 Copies file.txt into /app/ inside the container
+
+## docker-tags
+A Docker tag is a label used to identify a specific version of an image.
+1. It’s written after a colon (:)
+2. Format
+
+Example syntax:
+
+```
+docker build -t myapp:v1 .
+```
