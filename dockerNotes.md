@@ -9,6 +9,7 @@
 6. [Docker hub](#docker-hub)
 7. [Docker attach and detach mode](#docker-attach-and-detach-mode)
 8. [Interactive mode in docker](#interactive-mode-in-docker)
+9. [Docker copy command](#docker-copy-command)
 
 
 ## what is docker
@@ -123,3 +124,15 @@ example command:
 ```
 docker run -it ubuntu
 ```
+
+## docker-copy-command
+The docker copy command ( docker cp ) is used to transfer files/folders between your local system and a running ( or stopped ) container.
+
+docker cp copies files from host -> container or container -> host
+
+Example syntax
+
+```
+docker cp file.txt my_container:/app/file.txt
+```
+Copies file.txt into /app/ inside the container
