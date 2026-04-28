@@ -11,6 +11,7 @@
 8. [Interactive mode in docker](#interactive-mode-in-docker)
 9. [Docker copy command](#docker-copy-command)
 10. [Docker tags](#docker-tags)
+11. [Layers in docker images](#Layers-in-docker-images)
 
 
 ## what is docker
@@ -148,3 +149,16 @@ Example syntax:
 ```
 docker build -t myapp:v1 .
 ```
+
+## Layers-in-docker-images
+
+A Layer in docker image is one instruction in docker file
+
+For example the instrucation
+```
+FROM node -> 1st layer
+```
+is one layer
+
+
+The reason why it is considered as layer is because, if there is a image already available for the node.  That layer will be used reused from cache to save bandwidth.
