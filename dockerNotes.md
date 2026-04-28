@@ -160,5 +160,4 @@ FROM node -> 1st layer
 ```
 is one layer
 
-
 The reason why it is considered as layer is because, if there is a image already available for the node.  That layer will be used reused from cache to save bandwidth.
