@@ -1,4 +1,5 @@
-**Table of contents** ( ## goToTop )
+## Top
+**Table of contents**
 
 1. [What is docker?](#what-is-docker)
 2. [what is containers?](#what-is-containers)
@@ -24,7 +25,7 @@ Docker is used to
 2.  Run containers
 3.  Manage containers
 
-
+[Go to Top](#Top)
 
 ## what is containers
 
@@ -35,6 +36,8 @@ A container is lightweight and isolated environment that has,
 3.  Runtime ( like Java, Node, Pythong )
 
 eg.  A container is like a sealed lunch box with everything your app needs.
+
+[Go to Top](#Top)
 
 ## virtual machines and docker containers
 
@@ -63,16 +66,22 @@ Docker image with Java + app
 Run anywhere instantly
 Same behavior in Dev / QA / Prod
 
+[Go to Top](#Top)
+
 ## installation-of-docker
 
 For installation of docker refer to the official documentation from the docker site.
 
 note:  If there is a elavated permission issue while installation.  Please install using Powershell by Clicking run as administrator.  Installation commands can be found in official docker site. 
 
+[Go to Top](#Top)
+
 ## images and containers
 **Docker Image**: A Docker image is a read-only template that contains the application and its dependencies. It is used to create Docker containers. Think of it as a blueprint for your application. eg. A Docker image for a Node.js app would include the Node.js runtime and your application code.
 
 **Docker Container**: A Docker container is a running instance of a Docker image. It is an isolated environment where your application runs. Containers are lightweight and share the host OS kernel, making them faster to start and more efficient than virtual machines. eg. When you run a Docker image, it creates a container that executes your application in an isolated environment.  A container can be accessed via ports, and you can have multiple containers running the same image with different configurations in different terminals.
+
+[Go to Top](#Top)
 
 ## basic-docker-file
 
@@ -110,13 +119,20 @@ docker run -d \
   --name my-app-container \
   my-app
   ```
+
+[Go to Top](#Top)
+
 ## docker-hub
 A cloud-based registry for finding and sharing container images.
+
+[Go to Top](#Top)
 
 ## docker-attach-and-detach-mode
     Docker attach connects your terminal to a running container’s STDIN/STDOUT. ( example using the docker Run CONTAINER_NAME command).
 
     Docker detach mode Run of leave a container in the background without blocking your terminal. ( example using the docker start CONTAINER_NAME command).
+
+[Go to Top](#Top)
 
 ## interactive-mode-in-docker
 
@@ -128,6 +144,8 @@ example command:
 ```
 docker run -it ubuntu
 ```
+
+[Go to Top](#Top)
 
 ## docker-copy-command
 The docker copy command ( docker cp ) is used to transfer files/folders between your local system and a running ( or stopped ) container.
@@ -141,6 +159,8 @@ docker cp file.txt my_container:/app/file.txt
 ```
 Copies file.txt into /app/ inside the container
 
+[Go to Top](#Top)
+
 ## docker-tags
 A Docker tag is a label used to identify a specific version of an image.
 1. It’s written after a colon (:)
@@ -151,6 +171,8 @@ Example syntax:
 ```
 docker build -t myapp:v1 .
 ```
+
+[Go to Top](#Top)
 
 ## Layers-in-docker-images
 
@@ -163,3 +185,5 @@ FROM node -> 1st layer
 is one layer
 
 The reason why it is considered as layer is because, if there is a image already available for the node.  That layer will be used reused from cache to save bandwidth.
+
+[Go to Top](#Top)
