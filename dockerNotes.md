@@ -14,6 +14,7 @@
 9. [Docker copy command](#docker-copy-command)
 10. [Docker tags](#docker-tags)
 11. [Layers in docker images](#Layers-in-docker-images)
+12. [Docker volumes](#docker-volumes)
 
 
 ## what is docker
@@ -188,3 +189,8 @@ is one layer
 The reason why it is considered as layer is because, if there is a image already available for the node.  That layer will be used reused from cache to save bandwidth.
 
 [Go to Top](#Top)
+
+## docker-volumes
+Docker volumes are a way to persist data outside a containers lifecycle.
+
+A docker volume is a managed storage location on the host that containers can use to store and share data, even after teh container is stopped or deleted.
