@@ -3,18 +3,18 @@
 **Table of contents**
 
 1. [What is docker?](#what-is-docker)
-2. [what is containers?](#what-is-containers)
-3. [Difference between Virtual machienes and Docker containers?](#virtual-machines-and-docker-containers)
-3. [Installation of Docker](#installation-of-docker)
-4. [Images and Containers](#images-and-containers)
-5. [Basic docker file](#basic-docker-file)
-6. [Docker hub](#docker-hub)
-7. [Docker attach and detach mode](#docker-attach-and-detach-mode)
-8. [Interactive mode in docker](#interactive-mode-in-docker)
-9. [Docker copy command](#docker-copy-command)
-10. [Docker tags](#docker-tags)
-11. [Layers in docker images](#Layers-in-docker-images)
-12. [Docker volumes](#docker-volumes)
+1. [what is containers?](#what-is-containers)
+1. [Difference between Virtual machienes and Docker containers?](#virtual-machines-and-docker-containers)
+1. [Installation of Docker](#installation-of-docker)
+1. [Images and Containers](#images-and-containers)
+1. [Basic docker file](#basic-docker-file)
+1. [Docker hub](#docker-hub)
+1. [Docker attach and detach mode](#docker-attach-and-detach-mode)
+1. [Interactive mode in docker](#interactive-mode-in-docker)
+1. [Docker copy command](#docker-copy-command)
+1. [Docker tags](#docker-tags)
+1. [Layers in docker images](#Layers-in-docker-images)
+1. [Docker volumes](#docker-volumes)
 
 
 ## what is docker
