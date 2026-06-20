@@ -4,6 +4,7 @@
 
 1. [What is docker?](#what-is-docker)
 1. [what is containers?](#what-is-containers)
+1. [How does docker work ?](#how-does-docker-work)
 1. [Difference between Virtual machienes and Docker containers?](#virtual-machines-and-docker-containers)
 1. [Installation of Docker](#installation-of-docker)
 1. [Images and Containers](#images-and-containers)
@@ -38,6 +39,11 @@ A container is lightweight and isolated environment that has,
 3.  Runtime ( like Java, Node, Pythong )
 
 eg.  A container is like a sealed lunch box with everything your app needs.
+
+[Go to Top](#Top)
+
+## how-does-docker-work
+![Docker working example](./assets/HowDockerWorks.gif)
 
 [Go to Top](#Top)
 
