@@ -17,6 +17,7 @@
 1. [Layers in docker images](#Layers-in-docker-images)
 1. [Docker volumes](#docker-volumes)
 1. [Where is docker volumes located ?](#where-is-docker-volumes-located)
+1. [Types of docker volumes](#types-of-docker-volumes)
 
 
 ## what is docker
@@ -208,3 +209,9 @@ Docker usually takes care of its volumes, where its located and where to store t
 In window the docker volumes are stored under this folder directly if WSL is used.
 
 ![Docker volumensLocation](./assets/DockerVolumesWindowLocation.gif)
+
+## types-of-docker-volumes
+Types of docker volumes are:
+1.  Anonymous volumes
+2.  Named volumes
+3.  Bind mounts
