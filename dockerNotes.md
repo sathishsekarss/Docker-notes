@@ -16,6 +16,7 @@
 1. [Docker tags](#docker-tags)
 1. [Layers in docker images](#Layers-in-docker-images)
 1. [Docker volumes](#docker-volumes)
+1. [Where is docker volumes located ?](#where-is-docker-volumes-located)
 
 
 ## what is docker
@@ -200,3 +201,10 @@ The reason why it is considered as layer is because, if there is a image already
 Docker volumes are a way to persist data outside a containers lifecycle.
 
 A docker volume is a managed storage location on the host that containers can use to store and share data, even after teh container is stopped or deleted.
+
+## where-is-docker-volumes-located
+Docker usually takes care of its volumes, where its located and where to store the data.
+
+In window the docker volumes are stored under this folder directly if WSL is used.
+
+![Docker volumensLocation](./assets/DockerVolumesWindowLocation.gif)
