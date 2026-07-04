@@ -18,6 +18,7 @@
 1. [Docker volumes](#docker-volumes)
 1. [Where is docker volumes located ?](#where-is-docker-volumes-located)
 1. [Types of docker volumes](#types-of-docker-volumes)
+1. [CMD instruction in docker file](#CMD-instruction-in-docker-file)
 
 
 ## what is docker
@@ -215,3 +216,6 @@ Types of docker volumes are:
 1.  Anonymous volumes
 2.  Named volumes
 3.  Bind mounts
+
+## CMD-instruction-in-docker-file
+In a Dockerfile, the CMD instruction sets the default command that will execute automatically when a container is started from the built image.
