@@ -19,6 +19,7 @@
 1. [Where is docker volumes located ?](#where-is-docker-volumes-located)
 1. [Types of docker volumes](#types-of-docker-volumes)
 1. [CMD instruction in docker file](#CMD-instruction-in-docker-file)
+1. [Docker rm ( remove ) commands](#docker-remove-commands)
 
 
 ## what is docker
@@ -219,3 +220,84 @@ Types of docker volumes are:
 
 ## CMD-instruction-in-docker-file
 In a Dockerfile, the CMD instruction sets the default command that will execute automatically when a container is started from the built image.
+
+## docker-remove-commands
+```bash
+# Remove a stopped container
+docker rm <container_name_or_container_id>
+
+# Force remove a running container
+docker rm -f <container_name_or_container_id>
+
+# Remove multiple containers
+docker rm container1 container2 container3
+
+# Remove all containers
+docker rm -f $(docker ps -aq)
+
+# Remove all stopped containers
+docker container prune
+
+# Remove all stopped containers (without confirmation)
+docker container prune -f
+
+# Remove an image
+docker rmi <image_name_or_image_id>
+
+# Force remove an image
+docker rmi -f <image_name_or_image_id>
+
+# Remove multiple images
+docker rmi image1 image2 image3
+
+# Remove dangling images
+docker image prune
+
+# Remove all unused images
+docker image prune -a
+
+# Remove a volume
+docker volume rm <volume_name>
+
+# Remove all unused volumes
+docker volume prune
+
+# Remove all unused volumes (without confirmation)
+docker volume prune -f
+
+# Remove a network
+docker network rm <network_name>
+
+# Remove all unused networks
+docker network prune
+
+# Remove all unused networks (without confirmation)
+docker network prune -f
+
+# Remove unused Docker resources (containers, networks, dangling images, build cache)
+docker system prune
+
+# Remove unused Docker resources (without confirmation)
+docker system prune -f
+
+# Remove everything unused (including images and volumes)
+docker system prune -a --volumes
+
+# Remove everything unused (including images and volumes, without confirmation)
+docker system prune -a --volumes -f
+
+# List running containers
+docker ps
+
+# List all containers
+docker ps -a
+
+# List images
+docker images
+
+# List volumes
+docker volume ls
+
+# List networks
+docker network ls
+```
